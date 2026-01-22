@@ -22,14 +22,4 @@ public class Book {
         System.out.println("Publication Date: " + publicationDate);
     }
 
-    /*
-     * void printBookInfo() {
-     * System.out.printf("""
-     * 
-     * Title : %s
-     * Author : %s
-     * ISBN : %s
-     * Publication Date : %s
-     * """, title, author, isbn, publicationDate);
-     */
 }

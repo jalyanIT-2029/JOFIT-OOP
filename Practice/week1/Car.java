@@ -1,3 +1,5 @@
+package Practice.week1;
+
 public class Car {
     String brand;
     String model;

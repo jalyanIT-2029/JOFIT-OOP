@@ -1,3 +1,5 @@
+package Practice.week1;
+
 public class CarObj {
     public static void main(String[] args) {
 
