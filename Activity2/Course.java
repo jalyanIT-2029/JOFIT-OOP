@@ -1,12 +1,11 @@
 package Activity2;
 
 public class Course {
-
     String courseCode;
     String courseTitle;
     Student[] enrolledStudents;
     int enrollmentCount = 0;
-    static String schoolName = "My niversity";
+    static String schoolName = " LORMA Colleges";
 
     public static Course course1;
 
@@ -20,23 +19,23 @@ public class Course {
     }
 
     public void enrollStudent(Student student) {
-        if(enrollmentCount < enrolledStudents.length){
+        if (enrollmentCount < enrolledStudents.length) {
             enrolledStudents[enrollmentCount] = student;
             enrollmentCount++;
-        }else{
+        } else {
             System.out.println("This course has reached its limit.");
         }
     }
 
-    public void displayCourseInfo(){
-        System.out.println("School Name: " + schoolName);
-        System.out.println("Course: " + courseCode + " " + courseTitle );
-        for(int i = 0; i < enrollmentCount; i++){
-            System.out.println(" Enrolled students: " + enrolledStudents[i]);
+    public void displayCourseInfo() {
+        System.out.println("Course: " + courseCode + "-" + courseTitle);
+        for (int i = 0; i < enrollmentCount; i++) {
+            System.out.println("- " + enrolledStudents[i].firstName + " " + enrolledStudents[i].middleName + " "
+                    + enrolledStudents[i].lastName);
         }
     }
-    public static String getSchoolName(){
+
+    public static String getSchoolName() {
         return schoolName;
     }
-
 }

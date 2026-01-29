@@ -10,7 +10,7 @@ public class Main {
         Product product2 = new Product();
         product2.name = "Bag";
         product2.price = 349;
-        product2.stock = 89;
+        product2.stock -= 89;
         Product product3 = new Product("Digital Camera", 2300.00, 56);
 
         shopee.productList = new Product[50];
